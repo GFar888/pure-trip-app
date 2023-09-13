@@ -1,0 +1,157 @@
+.hotels,
+.tickets,
+.meal,
+.guide,
+.additional {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+}
+.hotels-header,
+.tickets-header,
+.meal-header,
+.guide-header,
+.additional-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.btn {
+  cursor: pointer;
+
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0.4rem;
+
+  border: none;
+  margin-left: 1rem;
+  &:hover {
+    filter: saturate(4);
+  }
+
+  &.add {
+    background-color: #7364ff;
+    color: white;
+  }
+  &.delete {
+    background-color: #f43f5e;
+    color: white;
+  }
+}
+
+table {
+  //   border: 1px solid #b3adad;
+
+  border-collapse: collapse;
+  padding: 1rem;
+  width: 100%;
+}
+table th {
+  padding: 5px;
+  background: #f5f5fa;
+  color: #878b97;
+}
+table td {
+  //   border: 1px solid #b3adad;
+
+  text-align: center;
+  padding: 5px;
+  background: #ffffff;
+  color: #313030;
+  &:nth-child(1) {
+    width: 1rem;
+  }
+}
+
+.hotels-body,
+.tickets-body,
+.meal-body,
+.guide-body,
+.additional-body {
+  border: 1px solid #b3adad;
+  height: 10rem;
+  height: min-content;
+  position: relative;
+
+  & input {
+    width: 100%;
+    padding: 0.55rem 0.5rem;
+    color: #313030;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    border: 1px solid #b3adad;
+    &:focus {
+      border: hidden;
+      outline-color: #7364ff;
+      outline-width: 1px;
+      outline-style: solid;
+    }
+  }
+}
+
+.room-type-select,
+.spot-select {
+  &__value-container {
+    padding-left: 0rem !important;
+  }
+
+  &__control--is-focused {
+    border-color: #7364ff !important;
+    box-shadow: none !important;
+  }
+
+  &__menu {
+    position: absolute !important;
+
+    width: fit-content;
+  }
+  &__menu-list {
+    padding: 0 !important;
+  }
+  &__option {
+    white-space: nowrap;
+  }
+  &__option--is-focused {
+    background-color: #f5f5fa !important;
+  }
+  &__option--is-selected {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+
+.total-sum {
+  align-self: flex-end;
+  color: #f43f5e;
+  border: 1px solid #878b97;
+  border-top: none;
+  background-color: #f5f5fa;
+  padding: 0.3rem 1rem;
+}
+
+.red {
+  color: #f43f5e;
+}
+
+.total-currency-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin: 4rem 2rem;
+
+  table {
+    table-layout: fixed;
+    border: 1px solid #b3adad;
+    padding: 1rem;
+    width: 100%;
+
+    td {
+      border: 1px solid #b3adad;
+    }
+  }
+
+  caption {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}

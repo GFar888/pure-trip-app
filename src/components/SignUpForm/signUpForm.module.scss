@@ -1,0 +1,86 @@
+.input {
+  margin: 1rem 0rem;
+
+  border: none;
+
+  width: 100%;
+  padding: 1rem 5rem 1rem 1rem;
+  border-radius: 5rem;
+  border: 1px solid #a7a1a1;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #5d5fef;
+  }
+}
+.pass_wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.show_hide_icon {
+  position: absolute;
+  width: 1.5rem;
+  height: auto;
+  fill: #a7a1a1;
+  right: 1rem;
+  cursor: pointer;
+}
+
+label {
+  color: #444444;
+  margin-bottom: 0rem;
+  &::after {
+    color: #e32;
+    content: " *";
+    display: inline;
+  }
+}
+.signUp_btn {
+  width: 100%;
+  border: none;
+  margin-top: 1rem;
+  background-color: #5d5fef;
+  padding: 1rem 5rem;
+  border-radius: 5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.signUp_form {
+  width: 100%;
+}
+
+.required {
+  display: block;
+  color: #e32;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  margin: -1rem 0rem 0.2rem 1rem;
+}
+
+@media screen and (max-height: 650px) {
+  .input {
+    margin: 0.5rem 0rem;
+
+    border: none;
+
+    width: 100%;
+    padding: 1rem 5rem 1rem 1rem;
+    border-radius: 5rem;
+    border: 1px solid #a7a1a1;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #5d5fef;
+    }
+  }
+
+  .required {
+    display: block;
+    color: #e32;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin: -0.5rem 0rem 0.2rem 1rem;
+  }
+}

@@ -1,0 +1,26 @@
+@import "./login_signUp.scss";
+@import "./home.scss";
+@import "./tours_list.scss";
+@import "../components/Sidebar/sidebar.scss";
+@import "../components/Header/header.scss";
+@import "./settings.scss";
+@import "../components/Profile/profile.scss";
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+  // width: 100vw;
+  height: 100%;
+}
+
+.body-wrapper {
+  display: flex;
+  height: -moz-calc(100% - 5rem);
+  height: -webkit-calc(100% - 5rem);
+  height: calc(100% - 5rem);
+}
+// body {
+//   background-image: url("../assets/images/buta.png");
+//   filter: opacity(0.5);
+// }

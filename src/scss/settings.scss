@@ -1,0 +1,167 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5fa;
+  width: 100%;
+  min-height: 100%;
+
+  padding: 1.3rem;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 0rem 0rem 1rem 0rem;
+
+  & input {
+    width: 50%;
+    padding: 0.2rem 0.5rem;
+    margin-top: 0.1rem;
+
+    color: #313030;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    border: 1px solid #b3adad;
+    &:focus {
+      border: hidden;
+      outline-color: #7364ff;
+      outline-width: 1px;
+      outline-style: solid;
+    }
+  }
+}
+
+.ticket-prices,
+.guide-prices {
+  margin-top: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  padding: 1rem;
+  // border: 1px solid red;
+  position: relative;
+}
+
+.settings-tickets-select {
+  &__value-container {
+    padding-left: 0rem !important;
+  }
+
+  &__control--is-focused {
+    border-color: #7364ff !important;
+    box-shadow: none !important;
+  }
+
+  &__menu {
+    position: absolute !important;
+
+    width: fit-content;
+  }
+  &__menu-list {
+    padding: 0 !important;
+  }
+  &__option {
+    white-space: nowrap;
+  }
+  &__option--is-focused {
+    background-color: #f5f5fa !important;
+  }
+  &__option--is-selected {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+
+.all-tickets,
+.all-guides {
+  padding: 1rem;
+  width: fit-content;
+  overflow-y: auto;
+  margin-bottom: 2rem;
+
+  // border: 1px solid red;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #7364ff;
+  }
+}
+.label-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon-edit-price,
+.icon-save-price,
+.plus-icon {
+  cursor: pointer;
+  color: #40444d;
+  font-size: 2rem;
+
+  &:hover {
+    color: #7364ff;
+  }
+}
+
+.save::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "Save Changes";
+  position: absolute;
+  left: 17rem;
+  white-space: nowrap;
+  font-size: 0.7rem;
+  color: red;
+  height: 1rem;
+  width: 5rem;
+  border-radius: 0.2rem;
+  border: 1px solid red;
+}
+
+.icons {
+  display: flex;
+}
+.title-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.new-spot {
+  display: flex;
+
+  & input {
+    width: 10rem;
+    &:nth-child(1) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.swal2-timer-progress-bar {
+  background-color: #7364ff !important;
+}
+
+.swal2-loading,
+.swal2-actions {
+  background-color: transparent;
+}
+.swal2-loader {
+  scale: 2;
+  border-color: #7364ff rgba(0, 0, 0, 0) #7364ff rgba(0, 0, 0, 0);
+}
+
+// .swal2-backdrop-show {
+//   background: transparent !important;
+// }

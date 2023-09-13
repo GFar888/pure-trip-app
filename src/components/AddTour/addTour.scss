@@ -1,0 +1,148 @@
+.add-tour-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5fa;
+  width: 100%;
+  height: min-content;
+
+  padding: 1.3rem;
+}
+
+.add-tour-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.save-btn {
+  cursor: pointer;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.6rem;
+  margin-right: 2rem;
+  background-color: #7364ff;
+  color: white;
+  &:hover {
+    filter: saturate(4);
+  }
+}
+.cancel-btn {
+  cursor: pointer;
+  border: none;
+  border: 1px solid #cacedc;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.6rem;
+  background-color: white;
+  //   font-weight: 600;
+  margin-right: 1.5rem;
+  color: #f43f5e;
+  &:hover {
+    filter: saturate(4);
+  }
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+.form-header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+.right-block {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tour-status {
+  position: relative;
+  text-wrap: nowrap;
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  width: fit-content;
+}
+
+.download-btn {
+  cursor: pointer;
+  border: none;
+  border: 1px solid #cacedc;
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.6rem;
+  background-color: white;
+  //   font-weight: 600;
+  margin-right: 1.5rem;
+  color: #7364ff;
+}
+
+.customer-info,
+.tour-info {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  p,
+  span {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+
+    input {
+      margin-left: 1rem;
+      padding: 0.1rem 0rem;
+      border: none;
+
+      &:focus {
+        outline-color: #7364ff;
+      }
+    }
+  }
+}
+
+.required {
+  border: 1px solid #f43f5e !important;
+  border-radius: 0.2rem;
+}
+
+.horizontal-line {
+  border-top: 1px solid #b0b0b0;
+  margin: 0rem 2rem;
+}
+
+.react-datepicker {
+  border-color: #7364ff !important;
+
+  &__triangle::after {
+    border-top-color: #7364ff !important;
+  }
+  &__triangle::before {
+    border-bottom-color: #7364ff !important;
+  }
+
+  &__header {
+    background-color: #f5f5fa !important;
+
+    border: none !important;
+  }
+  &__day {
+    &:hover {
+      background-color: #f5f5fa !important;
+    }
+    &--selected {
+      background: #7364ff !important;
+      color: white !important;
+    }
+  }
+}

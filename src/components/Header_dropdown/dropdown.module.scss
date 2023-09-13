@@ -1,0 +1,25 @@
+.dropdown {
+  top: 5rem;
+  position: absolute;
+  width: fit-content;
+
+  background-color: white;
+  z-index: 1;
+
+  & li {
+    cursor: pointer;
+    list-style: none;
+    color: #40444d;
+    font-size: 1rem;
+    padding: 1rem 3rem 1rem 1rem;
+
+    &:hover {
+      background-color: #7364ff;
+      color: white;
+    }
+  }
+}
+
+.icon {
+  margin-right: 1rem;
+}

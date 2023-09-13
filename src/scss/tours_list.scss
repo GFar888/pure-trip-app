@@ -1,0 +1,253 @@
+.tours_list_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5fa;
+  width: 100%;
+
+  height: 100%;
+
+  padding: 1.3rem;
+}
+
+.tours {
+  position: relative;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 0rem 0rem 1rem 0rem;
+  overflow: hidden;
+
+  // &::-webkit-scrollbar {
+  //   width: 0.5rem;
+  //   background-color: transparent;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   background-color: #7364ff;
+  // }
+}
+.tours_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.addTour_btn {
+  cursor: pointer;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.6rem;
+  background-color: #7364ff;
+  color: white;
+}
+
+.days_add_tour {
+  display: flex;
+  gap: 1rem;
+}
+
+.top-block {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  // position: sticky;
+  // top: 0;
+  // z-index: 2;
+}
+
+.left_group,
+.right_group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  & input {
+    width: 18rem;
+    border-radius: 0.6rem;
+    border: none;
+    background-color: #f5f5fa;
+    padding: 0.7rem 1rem 0.7rem 2rem;
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #cacedc;
+    }
+  }
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0.5rem;
+  color: #64748b;
+}
+
+.delete_btn {
+  cursor: pointer;
+  border: none;
+  border: 1px solid #cacedc;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.6rem;
+  background-color: white;
+  font-weight: 600;
+  color: #f43f5e;
+}
+
+.custom-select {
+  &__control {
+    border-radius: 0.6rem !important;
+  }
+
+  &__value-container {
+    padding-left: 1.6rem !important;
+    background: url(../assets/images/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3rem;
+    background-position-x: 0.2rem;
+  }
+
+  &__control--is-focused {
+    border-color: #7364ff !important;
+    box-shadow: none !important;
+  }
+
+  &__menu {
+    width: min-content !important;
+  }
+  &__menu-list {
+    padding: 0 !important;
+  }
+  &__option {
+    white-space: nowrap !important;
+  }
+  &__option--is-focused {
+    background-color: #f5f5fa !important;
+  }
+  &__option--is-selected {
+    background-color: #7364ff !important;
+    color: white !important;
+  }
+}
+
+// table
+.header-row {
+  background-color: #f8fafc !important;
+}
+
+.table {
+  padding-bottom: 0.5rem;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #7364ff;
+  }
+}
+
+.main-table {
+  & thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  & thead tr {
+    border-bottom: 2px solid #e2e8f0;
+  }
+  & thead th {
+    padding: 1rem 1rem;
+    background-color: #f8fafc;
+    color: #40444d;
+
+    white-space: nowrap;
+
+    & h5 {
+      display: inline-block;
+      cursor: pointer;
+      user-select: none;
+      &:hover + .icon {
+        color: #7364ff;
+      }
+    }
+
+    & .icon {
+      display: inline-block;
+      color: #40444d;
+      vertical-align: middle;
+    }
+  }
+
+  & tbody {
+    overflow-y: auto;
+    & tr {
+      cursor: pointer;
+      border-bottom: 1px solid #e2e8f0;
+
+      &:hover td {
+        background-color: #e2e8f0;
+      }
+    }
+    & td {
+      padding: 0.8rem 0.5rem;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  background-color: #ddd;
+  border-radius: 2px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.3rem;
+  top: 5px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #7364ff;
+
+  background: #7364ff
+    url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==")
+    3px 3px no-repeat;
+}
+
+.highlight td {
+  background-color: #7364ff;
+  color: white;
+}
+
+.action {
+  color: #40444d;
+  font-size: 1.4rem;
+  margin: 0rem 0.2rem;
+  &:hover {
+    color: #7364ff;
+  }
+}
+
+.no-data {
+  position: absolute;
+
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  height: 65%;
+}

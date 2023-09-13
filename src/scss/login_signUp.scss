@@ -1,0 +1,78 @@
+.container {
+  height: 90vh;
+  width: 70vw;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.input_block {
+  padding: 1rem 10%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image_block {
+  overflow: hidden;
+  width: 50%;
+}
+.login_cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.logo_and_text {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  // margin-bottom: 5rem;
+  & h1 {
+    color: #444444;
+  }
+  & svg {
+    width: 8rem;
+    height: auto;
+  }
+}
+
+.sign_up_text,
+.sign_in_text {
+  color: #5d5fef;
+  cursor: pointer;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+  & p {
+    color: #444444;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .logo_and_text {
+    & h1 {
+      font-size: 1.5rem;
+    }
+    & svg {
+      width: 35%;
+    }
+  }
+}
